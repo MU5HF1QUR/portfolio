@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{%  load static  %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap1.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/baseCustom.css' %}">
+    <title>Contact</title>
+</head>
+<body>
+
+
+    <a href="{% url 'index' %}" class="previous round">&laquo; Back</a>
+
+    <div class="grad"><h2 style="text-align: center; margin-top: 100px; color:#f3e9ee;">Contact Me</h2>
+        <div class="d-flex justify-content-center ">
+        
+            <form action="" class="con" method="POST" novalidate>
+                {% csrf_token %}
+            {% for field in form %}
+                <div class="fieldWrapper">
+        
+                    {{ field.label_tag }} {{ field }}
+                </div>
+            {% endfor %}
+        
+            <div class="form-group">
+                <input  class="btn btn-success" type="submit" value="Submit">
+            </div>
+            </form>
+        
+        </div></div>
+
+
+    
+    
+
+
+
+
+</body>
+</html>
