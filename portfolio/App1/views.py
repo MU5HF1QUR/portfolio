@@ -10,6 +10,9 @@ def ind (request):
 def img (request):
     return render(request, 'App1/img.html')
 
+def vid (request):
+    return render(request, 'App1/vid.html')
+
 
 def contactUs(request):
     frm = ContactForm(request.POST)

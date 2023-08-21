@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{%  load static  %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/vid.css' %}">
+    <title>Demo Project</title>
+</head>
+<body>
+    <h1>Project Demo</h1>
+    <hr>
+    <div class="grid-row reverse video-gallery">
+        <input type="radio" value="1" name="video-list" id="video-1" checked="checked" /><label for="video-1">Ecommerce Bookstore Website</label>
+        <input type="radio" value="2" name="video-list" id="video-2" /><label for="video-2">Anime Recomendatio Website</label>
+        
+        <!-- videos -->
+        <div class="video video-1">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/DJSkUBhmTSI" frameborder="0" allowfullscreen></iframe>
+        </div>
+       
+        <div class="video video-2">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/_oJ0btliHLs" frameborder="0" allowfullscreen></iframe>
+        </div>
+       
+        
+        <!-- videos -->
+    </div>
+
+
+
+    
+</body>
+</html>
